@@ -103,9 +103,9 @@ client.on("guildMemberAdd", member => {
                               if (err) return console.log(err);
       
                                     ctx.font = '21px kathen';
-                              ctx.fontSize = '25px';
+                              ctx.fontSize = '21px';
                               ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 240, 150);
+                                ctx.fillText(member.user.username, 240, 140);
                               
                               //NAMEً
                               ctx.font = '21px kathen';
