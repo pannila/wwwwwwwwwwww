@@ -118,13 +118,7 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(275, 85, 100, 0, Math.PI*2, true);
-                   ctx.closePath();
-                   
-                                 ctx.clip();
-
-                        ctx.drawImage(ava, 0, 0, 100, 100);
-                              ctx.closePath();
+                 ctx.arc(10, 10,256,256);
 
                             
     welcomer.sendFile(canvas.toBuffer())
