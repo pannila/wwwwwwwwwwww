@@ -92,7 +92,7 @@ client.on("guildMemberAdd", member => {
                   let BG = Canvas.Image;
                   let ground = new Image;
                   ground.src = Background;
-                  ctx.drawImage(ground, 0, 0, 540, 230);
+                  ctx.drawImage(ground, 0, 0, 1280, 720);
       
       })
       
@@ -102,14 +102,14 @@ client.on("guildMemberAdd", member => {
                           ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                               if (err) return console.log(err);
       
-                                    ctx.font = '21px kathen';
-                              ctx.fontSize = '25px';
+                                    ctx.font = '35px kathen';
+                              ctx.fontSize = '40px';
                               ctx.fillStyle = "#6ae00d";
                                 ctx.fillText(member.user.username, 592.50, 661);
                               
                               //NAMEً
-                              ctx.font = '21px kathen';
-                              ctx.fontSize = '20px';
+                              ctx.font = '41px kathen';
+                              ctx.fontSize = '40px';
                               ctx.fillStyle = "#FFFFFF";
       ctx.fillText(`Welcome to ${member.guild.name}`, 380.50, 541);
       
