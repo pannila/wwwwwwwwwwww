@@ -84,7 +84,7 @@ client.on("guildMemberAdd", member => {
       const w = ['w1.png', 'w2.png', 'w3.png', 'w4.png', 'w5.png'];
       
               let Image = Canvas.Image,
-                  canvas = new Canvas(557, 241),
+                  canvas = new Canvas(1280, 720),
                   ctx = canvas.getContext('2d');
   
               fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
@@ -105,20 +105,20 @@ client.on("guildMemberAdd", member => {
                                     ctx.font = '21px kathen';
                               ctx.fontSize = '25px';
                               ctx.fillStyle = "#6ae00d";
-                                ctx.fillText(member.user.username, 288.5, 140);
+                                ctx.fillText(member.user.username, 592.50, 661);
                               
                               //NAMEً
                               ctx.font = '21px kathen';
                               ctx.fontSize = '20px';
-                              ctx.fillStyle = "#6ae00d";
-      ctx.fillText(`Welcome to ${member.guild.name}`, 260.5, 84.5);
+                              ctx.fillStyle = "#FFFFFF";
+      ctx.fillText(`Welcome to ${member.guild.name}`, 380.50, 541);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(119.5, 120, 99.55, 0, Math.PI*2, true);
+                 ctx.arc(622, 250, 229, 241.49, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
