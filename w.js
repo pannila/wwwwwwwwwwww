@@ -84,7 +84,7 @@ client.on("guildMemberAdd", member => {
       const w = ['w1.png', 'w2.png', 'w3.png', 'w4.png', 'w5.png', 'w6.png', 'w7.png', 'w8.png', 'w9.png', 'w10.png', 'w11.png'];
       
               let Image = Canvas.Image,
-                  canvas = new Canvas(1280, 720),
+                  canvas = new Canvas(557, 241),
                   ctx = canvas.getContext('2d');
   
               fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
@@ -92,7 +92,7 @@ client.on("guildMemberAdd", member => {
                   let BG = Canvas.Image;
                   let ground = new Image;
                   ground.src = Background;
-                  ctx.drawImage(ground, 0, 0, 1280, 720);
+                  ctx.drawImage(ground, 0, 0, 540, 230);
       
       })
       
@@ -102,23 +102,23 @@ client.on("guildMemberAdd", member => {
                           ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                               if (err) return console.log(err);
       
-                                    ctx.font = '35px kathen';
-                              ctx.fontSize = '40px';
-                              ctx.fillStyle = "#6ae00d";
-                                ctx.fillText(member.user.username, 592.50, 661);
+                                    ctx.font = '21px kathen';
+                              ctx.fontSize = '25px';
+                              ctx.fillStyle = "#FFFFFF";
+                                ctx.fillText(member.user.username, 240, 150);
                               
                               //NAMEً
-                              ctx.font = '41px kathen';
-                              ctx.fontSize = '40px';
+                              ctx.font = '21px kathen';
+                              ctx.fontSize = '20px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome to ${member.guild.name}`, 380.50, 541);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 240, 90);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(642.50, 259, 0, 0, Math.PI*2, true);
+                 ctx.arc(278, 78.5, 73.79, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
