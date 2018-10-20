@@ -103,22 +103,22 @@ client.on("guildMemberAdd", member => {
                               if (err) return console.log(err);
       
                                     ctx.font = '21px kathen';
-                              ctx.fontSize = '21px';
-                              ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 240, 140);
+                              ctx.fontSize = '25px';
+                              ctx.fillStyle = "#6ae00d";
+                                ctx.fillText(member.user.username, 288.5, 140);
                               
                               //NAMEً
                               ctx.font = '21px kathen';
                               ctx.fontSize = '20px';
-                              ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome to ${member.guild.name}`, 200, 70);
+                              ctx.fillStyle = "#6ae00d";
+      ctx.fillText(`Welcome to ${member.guild.name}`, 260.5, 84.5);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(120.8, 120.5, 112.3, 0, Math.PI*2, true);
+                 ctx.arc(119.5, 120, 99.55, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
