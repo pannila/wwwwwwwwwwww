@@ -123,7 +123,7 @@ client.on("guildMemberAdd", member => {
                    
                                  ctx.clip();
 
-                        ctx.drawImage(ava, 40, 8, 150, 150);
+                        ctx.drawImage(ava, 5, 8, 214, 212);
                               ctx.closePath();
 
                             
