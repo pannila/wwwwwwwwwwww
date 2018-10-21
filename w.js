@@ -118,12 +118,12 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(125, 125, 100, 0, Math.PI*2, true);
+                 ctx.arc(277, 88, 68, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
 
-                        ctx.drawImage(ava, 5, 8, 170, 170);
+                        ctx.drawImage(ava, 24, 24, 200, 200);
                               ctx.closePath();
 
                             
