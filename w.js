@@ -92,7 +92,7 @@ client.on("guildMemberAdd", member => {
                   let BG = Canvas.Image;
                   let ground = new Image;
                   ground.src = Background;
-                  ctx.drawImage(ground, 0, 0, 557, 241);
+                  ctx.drawImage(ground, 0, 0, 540, 230);
       
       })
       
@@ -118,12 +118,12 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(100, 100, 100, 0, Math.PI*2, true);
+                 ctx.arc(125, 125, 100, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
 
-                        ctx.drawImage(ava, 5, 8, 128.5, 123.5);
+                        ctx.drawImage(ava, 25, 25, 200, 200);
                               ctx.closePath();
 
                             
