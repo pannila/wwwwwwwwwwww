@@ -37,16 +37,16 @@ client.user.setGame(`,help/\,inv`)
 
 
 const sWlc = {}
-const premium = ['340830120379940865']
+const premium = ['403640956571615243']
 client.on('message', message => {
-var prefix = "-";
+var prefix = ",";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
     channel: "welcome"
 }
 const channel = sWlc[message.guild.id].channel
-  if (message.content.startsWith(prefix + "w")) {
+  if (message.content.startsWith(prefix + "welcome-on")) {
     if(!message.member.hasPermission(`MANAGE_GUILD`)) return;
     let newChannel = message.content.split(' ').slice(1).join(" ")
     if(!newChannel) return message.reply(`**${prefix}setwelcomer <channel name>**`)
