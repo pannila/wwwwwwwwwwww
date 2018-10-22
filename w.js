@@ -105,13 +105,13 @@ client.on("guildMemberAdd", member => {
                                     ctx.font = '21px kathen';
                               ctx.fontSize = '25px';
                               ctx.fillStyle = "#8ad8b6";
-                                ctx.fillText(member.user.username, 239, 221);
+                                ctx.fillText(member.user.username, 269, 197);
                               
                               //NAMEً
                               ctx.font = '21px kathen';
                               ctx.fontSize = '20px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 104, 181);
+      ctx.fillText(`${member.guild.name}`, 275, 95);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
